@@ -1,11 +1,70 @@
-*{
+* {
     background-color: lightblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container{
-    width: 600px;
-    border: 1px solid salmon;
-    padding: 10px;
-    background-color:transparent;
+
+.container {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center contents vertically */
+    align-items: center; /* Center contents horizontally */
+    width: 70%;
+    max-width: 800px; /* Optional: Set a maximum width */    
+    padding: 10px;   
+    margin: 0 auto; /* Center the container */
+}
+.introduction p{
+    text-align: justify;
+    font-size: 20px;
+}
+.indicator{
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    margin-top: 10px; /* Add some space at the top */
+    font-size: 20px;
+    font-style: italic;
+}
+.contents {
+    width: 100%; /* Ensure contents take full width */
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow:hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; /* Optional: Remove padding */
+}
+
+.title {
+    text-align: center; /* Center the text */
+    font-size: 1.5em; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    color: #0946a0; /* Set text color to Viva Magenta */
+}
+
+.video-title h3 {
+    font-size: 1.5em; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    color: #ffffff; /* Set text color to Viva Magenta */
+    background-color: #0946a0; /* Set text color to Viva Magenta */
+    text-align: center;
+    border-radius: 25px;
+}
+
+.names p ul {
+    list-style: none;
+}
