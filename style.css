@@ -68,3 +68,7 @@ ul {
 .names p ul {
     list-style: none;
 }
+.section{
+    color: blue;
+    font-weight: 750;
+}
